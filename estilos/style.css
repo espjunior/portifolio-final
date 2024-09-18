@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.interface-universal {
+    padding: 20px 4%;
+}
+
+/* ---------------------------------------- */
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* ----  Botão do Menu Mobile ---- */
+
+.btn-menu-mob {
+    display: none;
+    position: relative;
+    z-index: 99999999999999;
+}
+
+.btn-menu-mob div {
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+.btn-menu-mob .line-menumob-1 {
+    width: 30px;
+}
+
+.btn-menu-mob .line-menumob-2 {
+    width: 20px;
+}
+
+.btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+}
+
+.btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+}
+
+/* ----  Botão do Menu Mobile ---- */
+.menu-mobile {
+    width: 0;
+    height: 0;
+    background-color: #090030f5; /*Fundo do Menu Mobile*/
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile nav {
+    width: 100%; /*Para o hover poder ir de um canto ou outro quando for selecionado*/
+}
+
+.menu-mobile nav ul {
+    list-style: none;
+}
+
+.menu-mobile nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block; /*Conversão para os links aceitarem o PADDING*/
+    transition: .5s; /*Efeito da transição do hover*/
+}
+
+.menu-mobile nav a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+
+.menu-mobile.abrir {
+    width: 100%;
+    height: 100vh; /*Tamaho da abertura do Menu Mobile*/
+}
+
+
+body.no-overflow { /*Classe criada no javascript para nao rolar o site mobile*/
+    overflow: hidden;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: #000;
+}
+
+
+/* ----- MAIN ----- */
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.856)), url(../imagens/bg-main-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main-txt-img img { /*Tamanho da Imagem MAIN*/
+    width: 480px;
+}
+
+ 
+.main-txt-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.texto-main {
+    color: #fff;
+
+}
+
+.texto-main h1 {
+    font-size: 3.3rem;
+}
+
+.texto-main h4 {
+    font-size: 1.6rem;
+}
+
+.texto-main p {
+    margin-bottom: 10px;
+}
+
+.midias-sociais {
+    font-size: 40px;
+    display: flex;
+    gap: 1rem;
+}
+
+.midias-sociais i {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#githuub {
+    transition: .3s;
+}
+
+#githuub:hover {
+    text-shadow: 0 0 10px #ffffff;   
+}
+
+#zap {
+    color: green;
+    transition: .3s;
+}
+
+#zap:hover {
+    color: rgb(3, 218, 3);
+    text-shadow: 0 0 10px #3aec43;
+}
+
+#face {
+    color: rgb(13, 13, 180);
+    transition: .3s;
+}
+
+#face:hover {
+    color: rgb(76, 57, 247);
+    text-shadow: 0 0 10px #0006a8;
+}
+
+#insta {
+    color: darkmagenta;
+    transition: .3s;
+}
+
+#insta:hover {
+    color: lightpink;
+    text-shadow: 0 0 10px #ff7edf;
+
+}
+
+#linke {
+    color: rgb(50, 50, 219);  
+    transition: .3s;
+}
+
+#linke:hover {
+    color: rgb(71, 21, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+
+#novox {
+    color: darkred;
+    transition: .3s;
+}
+
+#novox:hover {
+    color: red;
+    text-shadow: 0 0 10px #f12c2c;
+}
+
+
+
+/* ------ SECTION --------- */
+
+.sobre {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.932)), url(../imagens/bg-main-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.titulo-sessao, h2 {
+    font-size: 3rem;
+    color: rgb(192, 0, 0);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sobre-img-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.texto-sobre {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.texto-sobre p {
+    text-indent: 50px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.texto-sobre strong {
+    color: rgb(1, 1, 85);
+}
+
+/* ----- PROJETOS ------- */
+
+.img-fundo-projeto {
+    height: 170vh;
+    background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.856)), url(../imagens/bg-main-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.geral-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;    
+}
+
+
+.projetos {
+    background-color: rgb(15, 1, 54);
+    width: 300px;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-projeto {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.projetos p {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-projetos {
+    color: red;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+/* -------- FOOTER ----------- */
+
+footer {
+    background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.856)), url(../imagens/bg-main-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.pai-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 600px;
+
+}
+
+.pai-footer h3 { /*Tamanho da fonte */
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-shadow: 0 0 5px #991818;
+}
+
+.pai-footer h4 {
+    color: #fff;
+    text-shadow: 0 0 5px #991818;
+}
+
+.icon-contato {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px #2b1899;
+    font-size: 1rem;
+}
+
+.phone {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.icon-email {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.footer-msociais {
+    font-size: 1.6rem;
+}
+
+#wzap {
+    color: green;
+}
+
+#wgit {
+    color: #000;
+}
+
+#wface {
+    color: blue;
+}
+
+#wx {
+    color: darkred;
+}
+
+#wlinke {
+    color: darkcyan;
+}
+
+#winsta {
+    color: purple;
+}
+
+.linha {
+    border-bottom: 2px solid rgb(224, 213, 213);
+}
+
+.texto-linha p {
+    color: #c7c9ee;
+    text-align: center;
+    font-weight: 400;
+}

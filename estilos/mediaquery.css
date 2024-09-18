@@ -1,0 +1,122 @@
+@media (max-width: 865px) {
+    body {
+        background-color: rgb(8, 57, 73);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .btn-menu-mob {
+        display: block;
+    }
+
+
+    /* MAIN */
+
+    main {
+        height: 120vh;
+        background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.856)), url(../imagens/bg-main-01.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+
+    .main-txt-img {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+        height: 80vh; /*Centralização da imagem e o texto*/
+    }
+    
+    .texto-main {
+        color: #fff;
+        text-shadow: 2px 2px 10px rgb(83, 2, 2);
+        text-align: center;
+    
+    }
+    
+    .texto-main h1 {
+        font-size: 2.5rem;
+    }
+    
+    .texto-main h4 {
+        font-size: 1.5rem;
+    }
+    
+    .texto-main p {
+        display: none;
+        font-size: 1.2rem;
+    }
+    
+        
+    .main-txt-img img { 
+        display: block;
+        margin: 0 auto;
+        width: 80%; /*Tamanho da Imagem MAIN*/
+    }
+
+    .midias-sociais {
+        display: none;
+    }
+
+    /* SECTION SOBRE */
+
+    .titulo-sessao, h2 {
+        font-size: 3rem;
+        color: blue;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+
+    .sobre-img-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    
+    }
+    
+    .texto-sobre {
+        width: 100%;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: justify;
+    }
+
+    .sobre-img-texto img {
+        width: 50%;
+    }
+
+    /* PROJETOS */
+
+    .geral-projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;    
+    }
+    
+    
+    /* FOOTER */
+
+    .icon-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        gap: 10px;
+        color:#fff;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+
+}
