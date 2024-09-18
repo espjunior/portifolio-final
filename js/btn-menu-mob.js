@@ -11,5 +11,9 @@ btnMenuMob.addEventListener("click", ()=>{
     line2.classList.toggle('ativo2')
     menuMobile.classList.toggle('abrir')
 
-    body.classList.toggle('no-overflow')
+    body.classList.toggle('no-overflow') //Impede de rolar o site quando Menu estiver aberto
+
+
 })
+
+//Quando clicamos em alguma opção do Menu Mobile, o site trava.

@@ -76,7 +76,7 @@
 .menu-mobile {
     width: 0;
     height: 0;
-    background-color: #090030f5; /*Fundo do Menu Mobile*/
+    background-color: #03010ef5; /*Fundo do Menu Mobile*/
     position: absolute;
     top: 0;
     right: 0;
@@ -119,9 +119,12 @@
 }
 
 
-body.no-overflow { /*Classe criada no javascript para nao rolar o site mobile*/
-    overflow: hidden;
-}
+/*
+body.no-overflow { 
+    overflow: hidden;/*Classe criada no javascript para nao rolar o site mobile/
+}*/
+
+
 
 /* ----- HEADER ----- */
 header {
