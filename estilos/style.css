@@ -13,6 +13,19 @@
     padding: 20px 4%;
 }
 
+
+.btn-voltar a {
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+
+    display: flex;
+    
+}
+
 /* ---------------------------------------- */
 
 .barra-navegacao {
@@ -324,7 +337,9 @@ main {
 
 .geral-projetos {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     gap: 3rem;    
 }
 

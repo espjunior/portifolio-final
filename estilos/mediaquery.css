@@ -93,16 +93,17 @@
     /* PROJETOS */
 
     .geral-projetos {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 3rem;    
     }
     
+
     
     /* FOOTER */
+
 
     .icon-contato {
         display: flex;
