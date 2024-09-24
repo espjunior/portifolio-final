@@ -8,7 +8,6 @@
     <!--Biblioteca de Icones-->
     <script src="https://kit.fontawesome.com/43d4f8c7b9.js" crossorigin="anonymous"></script>
     <!-- Menu Mobile -->
-    <script src="js/btn-menu-mob.js" defer></script>
     <title>Menu Hamburguer</title>
 </head>
 <body>
@@ -17,39 +16,22 @@
 
                 <div class="barra-navegacao"> <!--DIV PAi da LOGO e Menu-->
 
-                    <a href="#"><img src="imagens/logo01.png" alt="Logomarca da Empresa"></a>
+                    <img src="imagens/logo01.png" alt="Logomarca da Empresa">
                     
                     <nav>
+
+                        <div class="bt-menu"> <!--Menu Mobile criação-->
+                            <a href="#mascara"></a>
+                        </div><!--bt-menu-->
+                        
                         <ul class="menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#projeto">Projetos</a></li>
+                        <li><a href="#footer">Contatos</a></li>
                         </ul>
                     </nav>
-
-
-
-                <!-- Menu Mobile -->
-                <div class="btn-menu-mob" id="btn-menu-mob">
-                    <div class="line-menumob-1"></div>
-                    <div class="line-menumob-2"></div>
-                </div>
-
-                
-                <div class="menu-mobile" id="menu-mobile">
-                    <nav>
-                        <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contatos</a></li>
-                        </ul>
-                    </nav>
-               </div><!--menu-mobile-->
-
-            </div><!--barra-navegacao-->
-
+        
 
         </div><!--interface-universal-->
     </header>
@@ -108,7 +90,7 @@
 
 
     <!-- Projetos -->
-    <section class="img-fundo-projeto">
+    <section class="img-fundo-projeto" id="projeto">
         <div class="interface-universal">
             <h3 class="titulo-sessao">Projetos</h3>
 
@@ -143,7 +125,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="interface-universal">
             <div class="pai-footer">
 
@@ -180,13 +162,25 @@
                 <div class="texto-linha">
                     <p>Desenvolvido por ®Edvaldo Júnior</p>
                 </div>
-
-
-
-
-
         </div>
     </footer>
+
+    <!-- Menu Mobile Novo -->
+    <div id="mascara">
+        <div class="menu-container">
+            <div class="fechar">
+                <a href="#fechar">X</a>
+            </div>
+            <nav>
+                <ul class="menu-mobile">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projeto">Projetos</a></li>
+                    <li><a href="#footer">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
 </body>
 </html>

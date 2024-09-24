@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth; /*Suavização do site ao clicar nos menus*/
 }
 
 
@@ -38,98 +37,124 @@
 }
 
 
-
-
-/* ----  Botão do Menu Mobile ---- */
-
-.btn-menu-mob {
-    display: none;
-    position: relative;
-    z-index: 99999999999999;
-}
-
-.btn-menu-mob div {
-    background-color: #fff;
-    height: 3px;
-    margin: 10px 0;
-    transition: .3s;
-}
-
-.btn-menu-mob .line-menumob-1 {
-    width: 30px;
-}
-
-.btn-menu-mob .line-menumob-2 {
-    width: 20px;
-}
-
-.btn-menu-mob .line-menumob-1.ativo1{
-    transform: rotate(45deg) translate(30%);
-}
-
-.btn-menu-mob .line-menumob-2.ativo2{
-    transform: rotate(-45deg) translate(30%);
-    width: 30px;
-}
-
-/* ----  Botão do Menu Mobile ---- */
-.menu-mobile {
-    width: 0;
-    height: 0;
-    background-color: #03010ef5; /*Fundo do Menu Mobile*/
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    overflow: hidden;
-    transition: .5s;
-}
-
-.menu-mobile nav {
-    width: 100%; /*Para o hover poder ir de um canto ou outro quando for selecionado*/
-}
-
-.menu-mobile nav ul {
-    list-style: none;
-}
-
-.menu-mobile nav a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: #fff;
-    padding: 20px 0;
-    display: block; /*Conversão para os links aceitarem o PADDING*/
-    transition: .5s; /*Efeito da transição do hover*/
-}
-
-.menu-mobile nav a:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 0 20px #fff;
-}
-
-.menu-mobile.abrir {
-    width: 100%;
-    height: 100vh; /*Tamaho da abertura do Menu Mobile*/
-}
-
-
-/*
-body.no-overflow { 
-    overflow: hidden;/*Classe criada no javascript para nao rolar o site mobile/
-}*/
-
-
-
 /* ----- HEADER ----- */
 header {
     background-color: #000;
 }
+
+
+/* --------- MENU MOBILE --------- */
+/* MENU  */
+#mascara{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.90);
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+    transition: all 1s ease;
+}
+#mascara:target{
+	opacity: 1;
+	z-index: 9;
+}
+
+.menu-mobile {
+	list-style: none;
+	text-align: center;
+	margin-top: 20%;
+}
+.menu-mobile li{
+	margin-top: 20px;
+}
+.menu-mobile a{
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+    text-decoration: none;
+	text-shadow: 1px 1px 2px #333;
+	letter-spacing: 3px;
+}
+.menu-mobile a:hover{
+	color: #00cc99;;
+}
+.bt-menu{
+	display: none;
+	margin-top: 15px;
+}
+.bt-menu a{
+	width: 35px;
+	height: 30px;
+	position: relative;
+	border-top: solid 3px #fff; /*Cor das linhas*/
+	display: block;
+}
+.bt-menu a::before{
+	content: "";
+	width: 35px;
+	height: 3px;
+	display: block;
+	background-color: #fff; /*Cor das linhas*/
+	position: absolute;
+	top: 5px;
+}
+.bt-menu a::after{
+	content: "";
+	width: 15px;
+	height: 3px;
+	display: block;
+	background-color: #fff; /*Cor das linhas*/
+	position: absolute;
+	top: 12px;
+	right: 0;
+	transition: all 0.5s ease;
+}
+.bt-menu a:hover::after{
+	width: 35px;
+}
+
+/* Botão X */
+.fechar{
+	width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.fechar a{
+	color: #fff;
+    text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+}
+.menu-mobile{
+	padding: 10px;
+}
+
+/* --------------------------- */
+/* criando menu mobile lateral */
+#mascara:target .menu-container{
+	width: 250px;
+}
+.menu-container{
+	width: 0px;
+    background: #03010c;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.8s ease;
+}
+.menu-mobile a{
+	color: #fff;
+}
+
+/* --------- FIM MENU MOBILE --------- */
 
 
 /* ----- MAIN ----- */
@@ -342,7 +367,7 @@ footer {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-}
+} 
 
 
 .pai-footer {
