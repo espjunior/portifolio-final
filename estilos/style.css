@@ -181,6 +181,26 @@ header {
 
 /* ----- MAIN ----- */
 
+#img-main {
+    transform: translateY(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
 main {
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,10), rgba(0, 0, 0, 0.856)), url(../imagens/bg-main-01.jpg);
